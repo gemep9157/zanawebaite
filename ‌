@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بازارچه | خرید آنلاین لوازم خانه، دیجیتال، پوشاک و زیبایی</title>
+<meta name="description" content="بازارچه، فروشگاه اینترنتی همه‌چیز: از خودرو و لوازم خانه تا دیجیتال، پوشاک و زیبایی. ارسال سریع به سراسر کشور و پرداخت امن.">
+<meta name="keywords" content="فروشگاه اینترنتی, خرید آنلاین, بازارچه, خودرو, لوازم خانه, دیجیتال, پوشاک, زیبایی">
+<meta name="robots" content="index, follow">
+<meta name="author" content="بازارچه">
+<link rel="canonical" href="https://example.com/">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="بازارچه">
+<meta property="og:title" content="بازارچه | فروشگاه آنلاین همه‌چیز">
+<meta property="og:description" content="از لوازم خانه تا دیجیتال، از پوشاک تا زیبایی — همه‌چیز رو یک‌جا از بازارچه بخر. محصول ویژه این هفته: لونا.">
+<meta property="og:image" content="">
+<meta property="og:url" content="https://example.com/">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="بازارچه | فروشگاه آنلاین همه‌چیز">
+<meta name="twitter:description" content="از لوازم خانه تا دیجیتال، از پوشاک تا زیبایی — همه‌چیز رو یک‌جا از بازارچه بخر.">
+<meta name="twitter:image" content="">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Structured data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OnlineStore",
+  "name": "بازارچه",
+  "description": "فروشگاه اینترنتی برای خرید محصولات متنوع در همه دسته‌ها",
+  "url": "https://example.com/"
+}
+</script>
+
+<!-- Structured data: Featured product -->
+<script type="application/ld+json" id="featured-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "جگوار F-Type",
+  "description": "خودروی اسپرت جگوار مدل F-Type، محصول ویژه این هفته بازارچه.",
+  "image": "https://uploadkon.ir/uploads/ec0513_26Jaguar-F-Type-1-.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "بازارچه"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "IRR",
+    "availability": "https://schema.org/InStock",
+    "url": "https://example.com/#featured"
+  }
+}
+</script>
+<style>
+  :root{
+    --bg: #10131f;
+    --bg-2: #171b2b;
+    --card: #1b2036;
+    --card-border: #2a3050;
+    --ink: #eef0f7;
+    --ink-dim: #a7adc4;
+    --amber: #e8a33d;
+    --amber-soft: #f3c47a;
+    --teal: #3fb6a8;
+    --line: #2a3050;
+    --radius-lg: 22px;
+    --radius-sm: 12px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background: radial-gradient(1200px 600px at 85% -10%, #1c2340 0%, var(--bg) 55%), var(--bg);
+    color: var(--ink);
+    font-family: 'Vazirmatn', sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* ===== Header ===== */
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding: 22px clamp(20px,5vw,64px);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top:0; z-index: 50;
+    background: rgba(16,19,31,0.85);
+    backdrop-filter: blur(10px);
+  }
+  .logo{
+    font-weight:900; font-size: 1.5rem; letter-spacing: -0.5px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .logo-mark{
+    width:34px;height:34px;border-radius:10px;
+    background: linear-gradient(135deg, var(--amber), var(--teal));
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.1rem; color:#10131f; font-weight:900;
+  }
+  nav{display:flex; gap:28px; font-weight:500; color:var(--ink-dim);}
+  nav a:hover{color:var(--ink);}
+  .header-actions{display:flex;gap:14px;align-items:center;}
+  .icon-btn{
+    width:40px;height:40px;border-radius:50%;
+    border:1px solid var(--line); display:flex;align-items:center;justify-content:center;
+    color:var(--ink-dim); font-size:1.1rem;
+  }
+  @media (max-width: 860px){ nav{display:none;} }
+
+  /* ===== Hero ===== */
+  .hero{
+    padding: clamp(50px,8vw,100px) clamp(20px,5vw,64px) clamp(30px,5vw,60px);
+    display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items:center;
+  }
+  @media (max-width: 900px){ .hero{grid-template-columns:1fr;} }
+  .eyebrow-line{
+    display:flex; align-items:center; gap:10px; color:var(--amber-soft); font-weight:600; margin-bottom:18px; font-size:0.95rem;
+  }
+  .eyebrow-line span.dot{width:7px;height:7px;border-radius:50%;background:var(--amber);}
+  h1{
+    font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+    font-weight: 800; letter-spacing:-1px; margin:0 0 22px;
+  }
+  .hero p.lead{ color: var(--ink-dim); font-size:1.15rem; max-width:520px; margin:0 0 32px;}
+  .search-bar{
+    display:flex; gap:10px; background: var(--card); border:1px solid var(--card-border);
+    border-radius: 999px; padding: 8px 8px 8px 22px; max-width: 480px;
+  }
+  .search-bar input{
+    flex:1; background:transparent; border:none; outline:none; color:var(--ink); font-family:inherit; font-size:1rem;
+  }
+  .search-bar input::placeholder{color:var(--ink-dim);}
+  .search-bar button{
+    background: var(--amber); color:#10131f; border:none; border-radius:999px;
+    padding: 12px 26px; font-weight:700; font-family:inherit; cursor:pointer; font-size:0.95rem;
+  }
+  .cats-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;}
+  .cat-chip{
+    padding: 9px 18px; border-radius: 999px; border:1px solid var(--line);
+    color: var(--ink-dim); font-size:0.9rem; font-weight:500;
+  }
+
+  .hero-visual{
+    position:relative; aspect-ratio: 1/1; border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, #202748, #14182a 70%);
+    border:1px solid var(--card-border);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .hero-visual .grid-lines{
+    position:absolute; inset:0;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 40px 40px; opacity:0.25;
+  }
+  .hero-visual .badge-float{
+    position:relative; text-align:center; color:var(--ink-dim); font-size:0.95rem; padding: 0 30px;
+  }
+  .hero-visual .badge-float b{display:block; color:var(--amber-soft); font-size:2.4rem; font-weight:800; margin-bottom:8px;}
+
+  /* ===== Section shell ===== */
+  section{ padding: 40px clamp(20px,5vw,64px); }
+  .section-head{ display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:28px; gap:20px; flex-wrap:wrap;}
+  .section-head h2{ font-size: clamp(1.5rem,2.5vw,2rem); font-weight:700; margin:0;}
+  .section-head p{ color:var(--ink-dim); margin: 6px 0 0; font-size:0.95rem;}
+  .view-all{ color: var(--teal); font-weight:600; font-size:0.9rem; white-space:nowrap;}
+
+  /* ===== Product grid ===== */
+  .grid{
+    display:grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 20px;
+  }
+  .product-card{
+    background: var(--card); border:1px solid var(--card-border); border-radius: var(--radius-lg);
+    overflow:hidden; display:flex; flex-direction:column;
+  }
+  .product-media{
+    aspect-ratio: 1/1; background: var(--bg-2);
+    display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+  }
+  .product-media img{width:100%;height:100%;object-fit:cover;}
+  .placeholder-media{
+    color: var(--ink-dim); font-size:0.85rem; text-align:center; padding: 20px;
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+  }
+  .placeholder-media .ph-icon{
+    width:44px;height:44px;border-radius:50%; border:1.5px dashed var(--line);
+    display:flex;align-items:center;justify-content:center; font-size:1.2rem;
+  }
+  .product-info{ padding: 16px 18px 18px; display:flex; flex-direction:column; gap:6px; flex:1;}
+  .product-cat{ font-size:0.75rem; color: var(--teal); font-weight:600;}
+  .product-name{ font-weight:700; font-size:1.02rem;}
+  .product-price{ margin-top:auto; display:flex; align-items:center; justify-content:space-between; padding-top:10px;}
+  .price-tag{ font-weight:800; color:var(--amber-soft);}
+  .add-btn{
+    background:transparent; border:1px solid var(--line); color:var(--ink);
+    border-radius: 10px; width:36px;height:36px; font-size:1.1rem; cursor:pointer;
+  }
+  .add-btn:hover{border-color:var(--amber); color:var(--amber);}
+
+  /* Featured Luna card */
+  .featured-wrap{
+    background: linear-gradient(120deg, #1c2140, #171b2b 60%);
+    border:1px solid var(--card-border); border-radius: var(--radius-lg);
+    padding: clamp(20px,4vw,42px); display:grid; grid-template-columns: 0.85fr 1.15fr; gap: 36px; align-items:center;
+  }
+  @media (max-width: 820px){ .featured-wrap{grid-template-columns:1fr;} }
+  .featured-media{
+    aspect-ratio: 4/5; border-radius: var(--radius-sm); background: var(--bg-2);
+    border: 1.5px dashed var(--card-border);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .featured-media img{width:100%;height:100%;object-fit:cover;}
+  .featured-tag{
+    display:inline-flex; align-items:center; gap:8px; background: rgba(232,163,61,0.12);
+    color: var(--amber-soft); padding: 6px 14px; border-radius:999px; font-size:0.82rem; font-weight:700; margin-bottom:16px; width:fit-content;
+  }
+  .featured-wrap h3{ font-size: clamp(1.6rem,3vw,2.2rem); margin:0 0 12px; font-weight:800;}
+  .featured-wrap p{ color: var(--ink-dim); max-width:480px; margin:0 0 22px;}
+  .featured-price-row{ display:flex; align-items:center; gap:18px; margin-bottom:24px;}
+  .featured-price-row .price-tag{ font-size:1.5rem;}
+  .btn-primary{
+    background: var(--amber); color:#10131f; border:none; padding: 14px 30px;
+    border-radius: 999px; font-weight:700; font-family:inherit; cursor:pointer; font-size:0.95rem;
+  }
+
+  /* ===== Trust strip ===== */
+  .trust-strip{
+    display:grid; grid-template-columns: repeat(4,1fr); gap:20px;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  }
+  .trust-item{ text-align:center; padding: 8px;}
+  .trust-item .num{ font-size:1.6rem; font-weight:800; color:var(--amber-soft);}
+  .trust-item .lbl{ color:var(--ink-dim); font-size:0.85rem; margin-top:4px;}
+  @media (max-width:700px){ .trust-strip{grid-template-columns: repeat(2,1fr);} }
+
+  footer{
+    padding: 40px clamp(20px,5vw,64px) 50px; border-top:1px solid var(--line);
+    color: var(--ink-dim); font-size:0.9rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="logo-mark">ب</span> بازارچه</div>
+  <nav>
+    <a href="#">همه دسته‌ها</a>
+    <a href="#featured">پیشنهاد ویژه</a>
+    <a href="#products">محصولات</a>
+    <a href="#">درباره ما</a>
+  </nav>
+  <div class="header-actions">
+    <div class="icon-btn">♡</div>
+    <div class="icon-btn">🛒</div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow-line"><span class="dot"></span> فروشگاهی برای هر نیاز، از هر دسته‌ای</div>
+    <h1>هرچی لازم داری، اینجا پیدا می‌کنی</h1>
+    <p class="lead">از لوازم خانه تا دیجیتال، از پوشاک تا زیبایی — بازارچه یک ویترین برای همه محصولات شماست. محصول جدید اضافه کن، فقط عکسش رو بفرست.</p>
+    <div class="search-bar">
+      <input type="text" placeholder="دنبال چی می‌گردی؟">
+      <button>جستجو</button>
+    </div>
+    <div class="cats-row">
+      <div class="cat-chip">لوازم خانه</div>
+      <div class="cat-chip">دیجیتال</div>
+      <div class="cat-chip">پوشاک</div>
+      <div class="cat-chip">زیبایی</div>
+      <div class="cat-chip">کودک</div>
+      <div class="cat-chip">ورزش</div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="grid-lines"></div>
+    <div class="badge-float">
+      <b>+۲۰۰</b>
+      محصول متنوع در انتظار شماست
+    </div>
+  </div>
+</section>
+
+<section id="featured">
+  <div class="section-head">
+    <div>
+      <h2>پیشنهاد ویژه این هفته</h2>
+      <p>محصولی که بیشترین توجه رو گرفته</p>
+    </div>
+  </div>
+  <div class="featured-wrap">
+    <div class="featured-media">
+      <img src="https://uploadkon.ir/uploads/ec0513_26Jaguar-F-Type-1-.jpg" alt="جگوار اف-تایپ، خودروی اسپرت مدل جدید" loading="lazy" width="800" height="1000">
+    </div>
+    <div>
+      <div class="featured-tag">✦ پرفروش‌ترین این هفته</div>
+      <h3>جگوار F-Type</h3>
+      <p>خودروی اسپرت جگوار مدل F-Type، انتخاب ویژه‌ی این هفته‌ی بازارچه. طراحی اسپرت، عملکرد بالا و ظاهری خیره‌کننده.</p>
+      <div class="featured-price-row">
+        <span class="price-tag">قیمت: تماس بگیرید</span>
+      </div>
+      <button class="btn-primary">افزودن به سبد خرید</button>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="trust-item"><div class="num">۲۴ ساعته</div><div class="lbl">پشتیبانی</div></div>
+  <div class="trust-item"><div class="num">۷ روزه</div><div class="lbl">ضمانت بازگشت</div></div>
+  <div class="trust-item"><div class="num">ارسال سریع</div><div class="lbl">به سراسر کشور</div></div>
+  <div class="trust-item"><div class="num">پرداخت امن</div><div class="lbl">درگاه معتبر</div></div>
+</section>
+
+<section id="products">
+  <div class="section-head">
+    <div>
+      <h2>محصولات فروشگاه</h2>
+      <p>محصولات اضافه‌شده تا این لحظه؛ بقیه به‌محض ارسال عکس، همین‌جا ردیف می‌شن</p>
+    </div>
+    <a class="view-all" href="#">مشاهده همه ←</a>
+  </div>
+  <div class="grid" id="product-grid">
+
+    <div class="product-card">
+      <div class="product-media">
+        <img src="https://uploadkon.ir/uploads/ec0513_26Jaguar-F-Type-1-.jpg" alt="جگوار اف-تایپ، خودروی اسپرت" loading="lazy" width="400" height="400">
+      </div>
+      <div class="product-info">
+        <div class="product-cat">خودرو</div>
+        <div class="product-name">جگوار F-Type</div>
+        <div class="product-price">
+          <span class="price-tag">تماس بگیرید</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-media">
+        <img src="https://uploadkon.ir/uploads/82f113_26ad563943f51e3596d834432e5fe6e50ad9c3f03f-1764017441.jpg" alt="یخچال فریزر خانگی" loading="lazy" width="400" height="400">
+      </div>
+      <div class="product-info">
+        <div class="product-cat">لوازم خانه</div>
+        <div class="product-name">یخچال فریزر</div>
+        <div class="product-price">
+          <span class="price-tag">تماس بگیرید</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-media">
+        <img src="https://uploadkon.ir/uploads/e3ab13_26ماشین-لباسشویی-ال-جی-4R5.jpg" alt="ماشین لباسشویی ال جی" loading="lazy" width="400" height="400">
+      </div>
+      <div class="product-info">
+        <div class="product-cat">لوازم خانه</div>
+        <div class="product-name">ماشین لباسشویی ال‌جی</div>
+        <div class="product-price">
+          <span class="price-tag">تماس بگیرید</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty slot waiting for next product -->
+    <div class="product-card">
+      <div class="product-media">
+        <div class="placeholder-media">
+          <div class="ph-icon">+</div>
+          محصول بعدی
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-cat">در انتظار</div>
+        <div class="product-name">منتظر عکس شما</div>
+        <div class="product-price">
+          <span class="price-tag">—</span>
+          <button class="add-btn">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>© بازارچه — فروشگاه آنلاین همه‌چیز</div>
+  <div>ساخته‌شده برای نمایش محصولات متنوع</div>
+</footer>
+
+</body>
+</html>
